@@ -21,4 +21,5 @@ urlpatterns = [
     # 위에서 include 함수를 임포트하고, 다시 패턴에 bookmark.urls를 연결하는 path를 추가한다.
     path('bookmark/', include('bookmark.urls')),
     path("admin/", admin.site.urls),
+    path("", include('bookmark.urls')),
 ]
